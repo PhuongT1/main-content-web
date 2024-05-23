@@ -1,0 +1,48 @@
+@import 'sass-rem';
+
+.group_title {
+  &.MuiTypography-root {
+    color: var(--color-mint-500, #44bdbd);
+    /* text/md-150/semibold */
+    font-size: rem-convert(16px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    margin-bottom: rem-convert(20px);
+  }
+}
+
+.field_group {
+  margin-bottom: rem-convert(20px);
+}
+
+.field_title {
+  &,
+  &.MuiTypography-root {
+    color: var(--grayscale-gray-0, #fff);
+    font-size: rem-convert(16px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    margin-bottom: rem-convert(8px);
+  }
+}
+
+.field_content {
+  &,
+  &.MuiTypography-root {
+    color: var(--grayscale-gray-50, #edeef1);
+    font-size: rem-convert(16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    padding: rem-convert(0 6px 0 14px);
+    word-break: break-word;
+  }
+}
+
+.group_buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}

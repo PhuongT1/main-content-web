@@ -1,0 +1,138 @@
+@import '../../assets/scss/_mixins.scss';
+@import '../../assets/scss/_variables.scss';
+@import 'sass-rem';
+
+.inventory_content {
+  width: rem-convert(1080px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: rem-convert(10px);
+  .inventory_title {
+    // color: #1a1a1a !important;
+    padding: rem-convert(32px) !important;
+    // background-color: #f0f1f2;
+    font-size: rem-convert(28px) !important;
+    font-weight: 700 !important;
+    // border-bottom: 1px solid #c5c6c7;
+    border-top-left-radius: rem-convert(10px);
+    border-top-right-radius: rem-convert(10px);
+  }
+  .inventory_nav {
+    // background-color: #fafafa;
+    flex-grow: 1;
+    display: flex;
+    height: 100%;
+    border-bottom-right-radius: rem-convert(10px);
+    border-bottom-left-radius: rem-convert(10px);
+  }
+}
+
+.inventory_tab {
+  width: 20.5% !important;
+  position: relative;
+  // background-color: #f0f1f2;
+  // border-right: 1px solid #c5c6c7 !important;
+  border-bottom-left-radius: rem-convert(10px);
+  // width: 278px !important;
+  button {
+    padding: 0px !important;
+  }
+  .count_user {
+    margin-left: rem-convert(16px);
+    padding: rem-convert(4px 6px);
+    background: $blue-500;
+    // color: $white-basic;
+    border-radius: rem-convert(8px);
+    font-size: rem-convert(14px);
+  }
+  .inventory_btnUpload {
+    background-color: #88b3fb1a !important;
+    border-radius: rem-convert(8px) !important;
+    border: rem-convert(1px) solid $blue-500 !important;
+    border-radius: rem-convert(8px);
+    margin: auto;
+    position: absolute !important;
+    bottom: 30px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    .button_text {
+      color: $blue-500;
+      font-size: rem-convert(16px);
+      font-weight: 600;
+      margin-left: rem-convert(6px);
+    }
+  }
+}
+
+.inventory_wrapperContent {
+  // width: 100%;
+  width: 75%;
+  position: relative;
+  .mansory_wrapper {
+    column-count: 3;
+    column-gap: rem-convert(16px);
+
+    .mansory_item {
+      margin-bottom: 16px;
+      break-inside: avoid;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: rem-convert(10px);
+        border: rem-convert(3px) solid #e4e5e7;
+        &:hover {
+          border: rem-convert(3px) solid $blue-500;
+          trasition: 0.4s;
+        }
+      }
+    }
+  }
+}
+.inventory_button {
+  gap: rem-convert(12px);
+  display: flex;
+  justify-content: flex-end;
+  padding: rem-convert(32px);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-bottom-right-radius: rem-convert(10px);
+  .inventory_cancelBtn {
+    border: none !important;
+    p {
+      font-weight: 600;
+    }
+  }
+  .inventory_submitBtn {
+    p {
+      font-weight: 600;
+    }
+  }
+}
+
+.select_wrapper {
+  .select_content {
+    background-color: white;
+    border-radius: rem-convert(8px);
+    box-shadow: 0 4px 6px -2px rgba(16, 24, 40, 0.02), 0px 12px 20px -4px rgba(96, 115, 152, 0.08);
+    .MuiOutlinedInput-notchedOutline {
+      border: none;
+    }
+    .MuiSelect-select {
+      padding-right: rem-convert(32px) !important;
+    }
+  }
+}
+
+.time_button {
+  height: 100%;
+}
+.color {
+  width: rem-convert(14px);
+  height: rem-convert(14px);
+  border-radius: 50%;
+  margin-right: rem-convert(5px);
+}

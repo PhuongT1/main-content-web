@@ -1,0 +1,11 @@
+@import 'sass-rem';
+.container_slide_sa {
+  height: 942px;
+  width: 100%;
+  border-radius: rem-convert(10px);
+  overflow: hidden;
+  position: relative;
+}
+.item {
+  height: 942px;
+}

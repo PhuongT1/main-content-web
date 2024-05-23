@@ -1,0 +1,55 @@
+@import 'sass-rem';
+
+.wrapper-strategy {
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(12px);
+  justify-content: center;
+  align-items: center;
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: rem-convert(20px);
+    border-radius: rem-convert(10px);
+    gap: rem-convert(12px);
+    width: 100%;
+    .tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: rem-convert(6px);
+      padding: rem-convert(4px 10px);
+    }
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: rem-convert(10px);
+    padding: rem-convert(10px);
+    border-radius: rem-convert(10px);
+    width: 100%;
+    .item {
+      display: flex;
+      align-items: center;
+      padding: rem-convert(10px 8px);
+      border-radius: rem-convert(10px);
+    }
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 2px;
+  background-color: #3c82f9;
+  width: 100%;
+
+  .vertical-line {
+    width: 2px;
+    height: 47px;
+    background-color: #3c82f9;
+  }
+}

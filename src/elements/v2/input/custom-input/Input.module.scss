@@ -1,0 +1,48 @@
+@import '@/assets/scss/mixins';
+@import '@/assets/scss/variables';
+@import 'sass-rem';
+
+@mixin init {
+  fieldset {
+    border: 0;
+  }
+  input[type='password'] {
+    font: small-caption;
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+// Define input states size
+@mixin inputSize($height, $fontSize, $lineHeight) {
+  height: rem-convert($height);
+  border-radius: rem-convert(8px);
+  input {
+    height: inherit;
+    border-radius: rem-convert(8px);
+    padding: 0;
+    font-weight: 400;
+    font-size: rem-convert($fontSize);
+    line-height: $lineHeight;
+    &::placeholder {
+      font-size: rem-convert($fontSize);
+      font-weight: 400;
+      line-height: $lineHeight;
+      opacity: 1;
+    }
+  }
+}
+
+.custom_input {
+  &.size {
+    &_lg {
+      @include inputSize(56px, 16px, 24px);
+    }
+    &_md {
+      @include inputSize(44px, 14px, 20px);
+    }
+  }
+}

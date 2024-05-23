@@ -1,0 +1,34 @@
+@import 'sass-rem';
+
+.layer_title {
+  display: flex;
+  align-items: center;
+  margin: rem-convert(40px auto 20px);
+  &.border {
+    padding-top: rem-convert(40px);
+    border-top: 1px solid #37393e;
+    margin-top: rem-convert(30px);
+  }
+
+  h2 {
+    font-size: rem-convert(24px);
+    line-height: rem-convert(28.8px);
+    font-weight: 700;
+  }
+}
+
+.btn_edit {
+  margin: rem-convert(40px auto 30px);
+  justify-content: center;
+}
+
+.content_view {
+  border-radius: rem-convert(10px);
+  padding: rem-convert(50px 20px);
+  text-align: center;
+  font-size: rem-convert(40px);
+  line-height: rem-convert(60px);
+  .item_label {
+    font-family: var(--nanum_pen);
+  }
+}

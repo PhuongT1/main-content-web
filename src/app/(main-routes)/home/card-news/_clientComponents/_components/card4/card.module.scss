@@ -1,0 +1,66 @@
+@import 'sass-rem';
+@import '../cardNews/cardNews.scss';
+
+.img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: var(--color-base-gray50, #edeef1);
+  object-fit: cover;
+}
+
+.imgContainer {
+  width: 100%;
+  aspect-ratio: 244/200;
+  @media (max-width: 1440px) {
+    aspect-ratio: 280/200;
+  }
+}
+
+.contentTitle {
+  &,
+  &.MuiTypography-root {
+    color: var(--color-base-black, #000);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 37.5px */
+    margin-bottom: rem-convert(15px);
+    height: 42px;
+    overflow: hidden;
+
+    @media (max-width: 1440px) {
+      margin-bottom: rem-convert(10px);
+      height: 36px;
+    }
+  }
+}
+
+.contentSubTitle {
+  &,
+  &.MuiTypography-root {
+    color: var(--color-base-black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+    max-height: 138px;
+    overflow: hidden;
+    @media (max-width: 1440px) {
+      max-height: rem-convert(70px);
+    }
+  }
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  padding: rem-convert(12px);
+
+  @media (max-width: 1440px) {
+    padding: 0;
+  }
+}

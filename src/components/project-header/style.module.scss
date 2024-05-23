@@ -1,0 +1,37 @@
+@import 'sass-rem';
+
+.center-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step_header {
+  @extend .center-flex;
+  /* 
+  Add breadcrumb above page title
+   */
+  margin: rem-convert(40px 0);
+  // margin: rem-convert(40px auto);
+
+  .title {
+    @extend .center-flex;
+    align-items: center;
+  }
+
+  /* 
+  Add breadcrumb above page title
+  - remove margin left of title
+   */
+  // h2 {
+  //   margin-left: 15px;
+  // }
+
+  button {
+    max-height: 40px;
+    margin-left: rem-convert(12px);
+    padding: rem-convert(10px 18px);
+    border-radius: rem-convert(8px);
+    background: #191a1c;
+    color: #ffffff;
+  }
+}

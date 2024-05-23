@@ -1,0 +1,23 @@
+@import 'sass-rem';
+
+.chip_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem-convert(4px);
+  .chip {
+    height: rem-convert(17px);
+    > span {
+      color: #191a1c;
+      background: #9498a3;
+      border-radius: rem-convert(25px);
+      padding: rem-convert(1px 4px);
+      font-size: rem-convert(10px);
+      line-height: rem-convert(15px);
+    }
+  }
+}
+
+.box_wrapper {
+  font-size: 12px;
+  white-space: 'nowrap';
+}

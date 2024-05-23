@@ -1,0 +1,9 @@
+@import 'sass-rem';
+@import '../../../../../assets/scss/variables';
+
+.swot_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: rem-convert('20px');
+}

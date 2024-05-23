@@ -1,0 +1,11 @@
+@import 'sass-rem';
+
+.box_wrapper {
+  padding: rem-convert(10px) rem-convert(32px) rem-convert(10px) rem-convert(20px);
+  height: rem-convert(44px);
+  display: flex;
+  align-items: center;
+  background-color: #37393e;
+  border-radius: rem-convert(10px);
+  font-size: rem-convert(16px);
+}

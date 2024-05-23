@@ -1,0 +1,25 @@
+@import 'sass-rem';
+
+.tabs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: rem-convert(12px) !important;
+  align-items: center;
+  height: rem-convert(64px);
+  padding: rem-convert(12px 24px) !important;
+  flex-shrink: 0;
+  margin: 0 !important;
+  border-radius: rem-convert(10px);
+  .tab {
+    display: flex;
+    min-width: 110px;
+    height: 40px !important;
+    padding: 8px 20px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: rem-convert(100px) !important;
+    margin-right: 12px !important;
+  }
+}

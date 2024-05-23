@@ -1,0 +1,41 @@
+@import 'sass-rem';
+
+.card {
+  display: flex;
+  padding: rem-convert(10px 14px);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  height: 75px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_content {
+    display: inline-flex;
+    align-items: center;
+    gap: rem-convert(20px);
+  }
+
+  &_button {
+    display: flex;
+    width: fit-content;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 100px;
+
+    /* 14 Rg_본문글씨 */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+}
+@media (min-width: 1700px) {
+  .card {
+    padding: rem-convert(15px 20px);
+  }
+}

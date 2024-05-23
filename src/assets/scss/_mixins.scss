@@ -1,0 +1,204 @@
+@import './variables';
+
+// Breakpoints
+@mixin smMinBreakPoint {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin mdMinBreakPoint {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin lgMinBreakPoint {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin xlMinBreakPoint {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+@mixin xxlMinBreakPoint {
+  @media (min-width: #{$screen-xxl}) {
+    @content;
+  }
+}
+
+@mixin customMinBreakPoint($size) {
+  @media (min-width: '#{$size}px') {
+    @content;
+  }
+}
+
+@mixin customMaxBreakPoint($size) {
+  @media (max-width: '#{$size}px') {
+    @content;
+  }
+}
+
+@mixin flex-row-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin large-title {
+  font-size: rem-convert(40px);
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 700;
+}
+
+@mixin title-1-bold {
+  font-size: rem-convert(36px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 700;
+}
+
+@mixin title-2-bold {
+  font-size: rem-convert(28px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 700;
+}
+
+@mixin title-3 {
+  font-size: rem-convert(24px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+@mixin title-3-semibold {
+  font-size: rem-convert(24px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+@mixin subtitle-1 {
+  font-size: rem-convert(20px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+@mixin subtitle-1-semibold {
+  font-size: rem-convert(20px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+@mixin body-1 {
+  font-size: rem-convert(20px);
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+@mixin body-2 {
+  font-size: rem-convert(18px);
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+@mixin body-2-semibold {
+  font-size: rem-convert(18px);
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+@mixin body-3 {
+  font-size: rem-convert(16px);
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+@mixin body-3-semibold {
+  font-size: rem-convert(16px);
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+@mixin caption-1 {
+  font-size: rem-convert(14px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+@mixin caption-1-semibold {
+  font-size: rem-convert(14px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+@mixin caption-2 {
+  font-size: rem-convert(12px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+
+@mixin caption-2-semibold {
+  font-size: rem-convert(12px);
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+@mixin button-1-semibold {
+  font-size: rem-convert(18px);
+  line-height: 150%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+@mixin button-2-semibold {
+  font-size: rem-convert(16px);
+  line-height: 125%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+@mixin button-3-semibold {
+  font-size: rem-convert(14px);
+  line-height: 125%;
+  letter-spacing: 0%;
+  font-weight: 600;
+}

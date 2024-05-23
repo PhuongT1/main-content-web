@@ -1,0 +1,61 @@
+@import 'sass-rem';
+
+.layer_step {
+  margin: rem-convert(52px 0 20px);
+
+  .title {
+    font-size: rem-convert(24px);
+    font-weight: 700;
+    line-height: rem-convert(28.8px);
+    span {
+      font-size: rem-convert(16px);
+      display: inline-block;
+      margin-left: rem-convert(10px);
+    }
+  }
+
+  .sub_title {
+    font-size: rem-convert(16px);
+    margin: rem-convert(10px auto 20px);
+    line-height: 150%;
+  }
+}
+
+.tipItem {
+  margin: rem-convert(20px 0 60px);
+  ol {
+    padding-left: rem-convert(25px);
+    li {
+      line-height: 150%;
+    }
+    > li {
+      position: relative;
+      padding-left: rem-convert(5px);
+    }
+    > li::marker {
+      font-weight: 400;
+      padding-right: rem-convert(10px);
+      position: absolute;
+      top: 10px;
+    }
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        padding-left: rem-convert(5px);
+      }
+      li::before {
+        content: '\00B7';
+        font-size: rem-convert(25px);
+        position: absolute;
+        top: 0;
+        left: rem-convert(-10px);
+      }
+    }
+  }
+}
+
+.btn_active {
+  gap: rem-convert(15px);
+  justify-content: center;
+}

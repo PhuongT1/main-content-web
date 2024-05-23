@@ -1,0 +1,30 @@
+@import 'sass-rem';
+
+.boxLayoutWrapper {
+  .chip {
+    height: rem-convert(21px);
+    margin-left: rem-convert(4px);
+    > span {
+      padding: rem-convert(2px 8px);
+      border-radius: rem-convert(25px);
+      color: #9498a3;
+      font-weight: 400;
+    }
+  }
+
+  .tabType {
+    min-height: rem-convert(44px);
+  }
+}
+
+.boxCardSelectedWrapper {
+  min-height: rem-convert(100px);
+  margin-top: rem-convert(20px);
+
+  .remove_icon {
+    cursor: pointer;
+    position: absolute;
+    top: rem-convert(14px);
+    right: rem-convert(10px);
+  }
+}

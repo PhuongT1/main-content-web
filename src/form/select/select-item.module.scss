@@ -1,0 +1,9 @@
+@import 'sass-rem';
+
+.standard {
+  :global(.MuiInputBase-root) {
+    :global(.MuiOutlinedInput-notchedOutline) {
+      border: 0;
+    }
+  }
+}

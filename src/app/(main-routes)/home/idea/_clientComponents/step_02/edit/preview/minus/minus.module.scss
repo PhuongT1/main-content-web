@@ -1,0 +1,13 @@
+@import 'sass-rem';
+
+.preview {
+  &_right {
+    &_title {
+      /* text/md-150/semibold */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 24px */
+    }
+  }
+}

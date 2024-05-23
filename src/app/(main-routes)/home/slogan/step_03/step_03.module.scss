@@ -1,0 +1,79 @@
+@import 'sass-rem';
+
+.form_slogan {
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(60px);
+  margin-top: rem-convert(60px);
+
+  .part_area {
+    display: flex;
+    flex-direction: column;
+    gap: rem-convert(24px);
+
+    h2 {
+      font-size: rem-convert(24px);
+      line-height: rem-convert(28.8px);
+      font-weight: 700;
+    }
+
+    .sub_title {
+      color: #9f9ea4 !important;
+      margin-top: rem-convert(10px) !important;
+    }
+
+    .sub_title_concept {
+      color: #9f9ea4 !important;
+    }
+
+    .layer_title {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem-convert(10px);
+
+      &.border {
+        padding-top: rem-convert(50px);
+        border-top: 2px solid #62626c;
+      }
+      .card_note {
+        color: #44bdbd;
+        font-size: rem-convert(16px);
+        margin-left: rem-convert(10px);
+        font-weight: 600;
+      }
+    }
+  }
+  .final_slogan {
+    padding: rem-convert(70px 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: rem-convert(10px);
+    .slogan {
+      padding-inline: rem-convert(40px);
+      font-family: var(--nanum_pen);
+      font-size: rem-convert(40px);
+      line-height: rem-convert(60px);
+      font-weight: 400;
+      text-align: center;
+    }
+    &::before,
+    &::after {
+      content: '“';
+      font-size: rem-convert(40px);
+      line-height: rem-convert(60px);
+      border-radius: rem-convert(10px);
+      font-weight: 700;
+      color: #44bdbd;
+    }
+  }
+}
+
+.btn_active {
+  gap: rem-convert(15px);
+  justify-content: center;
+
+  button {
+    max-width: 160px;
+  }
+}

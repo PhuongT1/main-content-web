@@ -1,0 +1,27 @@
+@import 'sass-rem';
+
+.toolbar {
+  &_item {
+    position: relative;
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_color_wrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 0 !important;
+  }
+
+  &_color_picker {
+    position: absolute;
+    left: rem-convert(14px);
+    top: rem-convert(36px);
+    z-index: 100;
+  }
+}

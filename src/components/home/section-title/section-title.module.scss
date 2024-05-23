@@ -1,0 +1,12 @@
+@import 'sass-rem';
+
+.box_section {
+  width: 100%;
+  display: flex;
+  gap: rem-convert(10px);
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: rem-convert(20px);
+  margin-top: rem-convert(60px);
+}

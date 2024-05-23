@@ -1,0 +1,7 @@
+@import 'sass-rem';
+
+.layer_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem-convert(10px);
+}

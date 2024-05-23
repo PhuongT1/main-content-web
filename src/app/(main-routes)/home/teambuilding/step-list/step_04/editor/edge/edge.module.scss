@@ -1,0 +1,15 @@
+@import 'sass-rem';
+
+.button_disconnect {
+  position: absolute;
+  font-size: rem-convert(20px);
+  width: 30px;
+  height: 30px;
+  border-radius: 100rem;
+  pointer-events: all;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    background-color: #ccc;
+  }
+}

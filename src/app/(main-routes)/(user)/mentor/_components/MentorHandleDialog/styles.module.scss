@@ -1,0 +1,66 @@
+@import "sass-rem";
+.popup_container {
+	margin: 0;
+	width: 100%;
+	max-width: rem-convert(720px);
+}
+.popup_paper {
+	width: 100%;
+	margin: auto rem-convert(27.5px) !important;
+	@media screen and (max-width: 768px) {
+		margin: auto rem-convert(20px) !important;
+	}
+}
+.popup_root {
+	display: flex;
+	justify-content: center;
+	z-index: 1250;
+}
+.popup_wrapper {
+	&.dark {
+		background-color: #1f1f29;
+	}
+	&.light {
+		background-color: #fff;
+	}
+	width: 100%;
+	padding: 0 !important;
+	.content_wrapper {
+		// border-bottom: 1px solid black;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding: rem-convert(32px);
+		.title {
+			white-space: pre-wrap;
+			text-align: center;
+		}
+		.description {
+			white-space: pre-line;
+		}
+		.subtitle {
+			white-space: pre-line;
+			margin-bottom: rem-convert(16px);
+		}
+		.item_list {
+			// white-space: pre-line;
+			list-style-type: disc;
+			color: white;
+			.description {
+				display: inline-block;
+			}
+		}
+	}
+	.action_wrapper {
+		height: rem-convert(48px);
+		margin-top: rem-convert(48px);
+		align-items: center;
+		justify-content: center;
+		gap: rem-convert(8px);
+		display: flex;
+		.submit_button {
+			width: rem-convert(120px);
+		}
+	}
+}

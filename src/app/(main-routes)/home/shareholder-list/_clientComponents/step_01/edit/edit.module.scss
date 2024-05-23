@@ -1,0 +1,10 @@
+@import 'sass-rem';
+
+.btn_active {
+  margin-top: rem-convert(60px);
+  gap: rem-convert(15px);
+  justify-content: center;
+  button {
+    max-width: 160px;
+  }
+}

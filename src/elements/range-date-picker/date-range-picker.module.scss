@@ -1,0 +1,114 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+@import 'sass-rem';
+
+@mixin init {
+	fieldset {
+		border: 0;
+	}
+	input[type='password'] {
+		font: small-caption;
+	}
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+// Define input states size
+// @mixin inputSize($height, $fontSize, $lineHeight) {
+//   height: rem-convert($height);
+//   border-radius: rem-convert(6px);
+//   input {
+//     height: inherit;
+//     border-radius: rem-convert(6px);
+//     padding: 0 rem-convert(12px) !important;
+//     color: $solid-neutral-900;
+//     font-weight: 400;
+//     font-size: rem-convert($fontSize);
+//     line-height: $lineHeight;
+//     &::placeholder {
+//       font-size: rem-convert($fontSize);
+//       font-weight: 400;
+//       line-height: $lineHeight;
+//       color: $grey-a3;
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// .form_control {
+//   width: auto;
+//   height: 44px;
+//   display: flex;
+//   border-radius: 6px;
+//   background: #fff;
+//   box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.02), 0px 12px 20px -4px rgba(96, 115, 152, 0.08);
+//   cursor: pointer;
+//   &.variant {
+//     @include init;
+//     &_solid {
+//       border: 1px solid $grey-f5;
+//       background-color: $grey-f5;
+//       &:hover {
+//         border: 1px solid $solid-primary-500;
+//         background: $white-basic;
+//       }
+
+//       &:disabled {
+//         border: 1px solid $solid-neutral-50 !important;
+//         background: $solid-neutral-50 !important;
+//       }
+//     }
+//     &_ghost {
+//       background-color: $white-basic;
+//       box-shadow: $bs-neutral-lg;
+//       &:hover {
+//         border: 1px solid $solid-primary-500;
+//         background: $white-basic;
+//       }
+//       &:focus {
+//         border: 1px solid $solid-primary-500;
+//         background: $white-basic;
+//         outline: none;
+//         box-shadow: 0px 0px 0px 2px rgba(230, 25, 115, 0.2);
+//       }
+//       &:disabled {
+//         border: 1px solid $solid-neutral-50 !important;
+//         background: $solid-neutral-50 !important;
+//       }
+//     }
+//   }
+//   .custom_range_datepicker {
+//     width: 100%;
+//     padding: 0;
+
+//     &.size {
+//       &_lg {
+//         @include inputSize(56px, 16px, 24px);
+//       }
+//       &_md {
+//         @include inputSize(44px, 14px, 20px);
+//       }
+//     }
+
+//     fieldset {
+//       border: 0;
+//       padding: 0;
+//     }
+//   }
+// }
+
+.icon {
+	margin-right: rem-convert(12px);
+	vertical-align: top;
+	&.clear_icon {
+		&:hover {
+			cursor: pointer;
+		}
+		vertical-align: 'middle';
+		width: '1rem';
+		cursor: 'pointer';
+	}
+}

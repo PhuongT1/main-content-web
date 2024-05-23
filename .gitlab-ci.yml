@@ -1,0 +1,17 @@
+before_script:
+  - pwd
+  - whoami
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+
+deploy_dev:
+  environment:
+    name: Deploy to dev
+  stage: deploy
+  when: manual
+  only:
+    - dev
+  script:
+    - ssh -o StrictHostKeyChecking=no ubuntu@$EC2_IPADDRESS "cd ~/main-contents-web/ && git pull origin dev && docker system prune -a -f && docker compose up --build -d && docker system prune -a -f"

@@ -1,0 +1,38 @@
+.table_option {
+  display: flex;
+  margin: 5px 2px;
+  gap: 5px;
+}
+.table_option {
+  white-space: nowrap;
+}
+.table_input {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 3px;
+}
+.table_unit {
+  width: 15px;
+  height: 15px;
+  border: 1px solid lightgray;
+}
+
+.popup_wrapper {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  border-radius: 10px;
+  left: 0;
+  z-index: 100;
+  background-color: #ffff;
+}
+.toolbar {
+  &_item {
+    position: relative;
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+  }
+}

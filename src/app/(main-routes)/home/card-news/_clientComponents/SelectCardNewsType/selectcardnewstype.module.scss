@@ -1,0 +1,27 @@
+@import 'sass-rem';
+
+.title,
+.sub_title {
+  &,
+  &.MuiTypography-root {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 150%; /* 24px */
+    text-align: center;
+  }
+}
+
+.title {
+  &,
+  &.MuiTypography-root {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+}
+
+.sub_title {
+  &,
+  &.MuiTypography-root {
+    font-weight: 400;
+  }
+}

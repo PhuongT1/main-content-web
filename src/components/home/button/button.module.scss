@@ -1,0 +1,12 @@
+#deactive {
+  opacity: 0.3;
+
+  // path {
+  //   stroke: #ccc;
+  // }
+
+  &:hover {
+    opacity: 0.3;
+    cursor: default;
+  }
+}

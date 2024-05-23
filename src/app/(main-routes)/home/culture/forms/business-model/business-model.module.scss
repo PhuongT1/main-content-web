@@ -1,0 +1,21 @@
+@import 'sass-rem';
+
+.tabscustom {
+  background-color: #1c2433 !important;
+
+  :global(.MuiTabs-flexContainer) {
+    gap: 12px;
+  }
+  :global(.MuiTabs-indicator) {
+    border-radius: 8px !important;
+  }
+  :global(.MuiButtonBase-root) {
+    white-space: nowrap;
+    background-color: #191a1c !important;
+    border-radius: 8px !important;
+  }
+
+  :global(.Mui-selected) {
+    background-color: #3c82f9 !important;
+  }
+}

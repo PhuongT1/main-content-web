@@ -1,0 +1,57 @@
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/variables';
+@import 'sass-rem';
+
+/* Keyframes */
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wrapperLoading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // pointer-events: none;
+  .loadIcon {
+    width: rem-convert(50px);
+    height: rem-convert(10px);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    span {
+      position: absolute;
+      display: inline-block;
+      width: 20%;
+      height: 100%;
+      border-radius: 100%;
+      animation-name: loading;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      z-index: 1001;
+      &:nth-child(1) {
+        left: 0;
+      }
+      &:nth-child(2) {
+        left: 40%;
+        animation-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        right: 0;
+        animation-delay: 0.4s;
+      }
+    }
+  }
+}

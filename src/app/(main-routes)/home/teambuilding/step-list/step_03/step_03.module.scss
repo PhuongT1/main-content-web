@@ -1,0 +1,17 @@
+@import 'sass-rem';
+
+.basic_info_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: rem-convert(10px);
+  gap: rem-convert(20px);
+
+  .box_avatar {
+    flex-shrink: 0;
+    width: rem-convert(240px);
+    height: rem-convert(200px);
+  }
+}

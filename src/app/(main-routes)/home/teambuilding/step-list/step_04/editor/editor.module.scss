@@ -1,0 +1,19 @@
+@import 'sass-rem';
+
+.editor_container {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: rem-convert(515px);
+  height: 640px;
+  padding: rem-convert(24px);
+}
+
+@media screen and (min-width: 1600px) {
+  .editor_container {
+    max-height: rem-convert(515px);
+    height: rem-convert(515px);
+  }
+}

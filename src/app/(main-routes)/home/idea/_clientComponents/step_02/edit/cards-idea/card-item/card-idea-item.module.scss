@@ -1,0 +1,83 @@
+@import 'sass-rem';
+
+.card {
+  display: flex;
+  width: calc((100% - 128px) / 2); // 40px * 2 + 48px
+  max-width: rem-convert(540px);
+  flex-direction: column;
+  border-radius: 12px;
+  min-height: rem-convert(300px);
+  &_empty {
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 48px;
+    flex: 1 0 0;
+  }
+  &_main {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  &_img {
+    width: 100%;
+    max-width: rem-convert(500px);
+    height: rem-convert(166px);
+    flex-shrink: 0;
+    border-radius: 10px;
+    position: relative;
+
+    &_btn {
+      position: absolute;
+      white-space: nowrap;
+      text-wrap: nowrap;
+      font-weight: 600;
+      z-index: 10;
+      display: flex;
+      width: rem-convert(138px);
+      height: rem-convert(36px);
+      padding: 8px 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 6px;
+
+      &_left {
+        top: 16px;
+        left: 16px;
+        background-color: rgba(60, 130, 249, 0.5);
+      }
+
+      &_right {
+        right: 16px;
+        top: 16px;
+      }
+    }
+
+    &_text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  &_tag {
+    width: 100%;
+  }
+  &_idea {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 14 Sb_본문글씨 */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150% !important; /* 21px */
+  }
+}

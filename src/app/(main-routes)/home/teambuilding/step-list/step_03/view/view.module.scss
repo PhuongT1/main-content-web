@@ -1,0 +1,19 @@
+@import 'sass-rem';
+
+
+
+.btn_edit {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+#selected_title {
+
+  /* Display/xs/semibold */
+  font-size: rem-convert(24px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 28.8px */
+}

@@ -1,0 +1,17 @@
+@import 'sass-rem';
+
+// Overwrite Stepper @Mui
+
+.layer_item {
+  padding: rem-convert(16px 20px);
+  gap: rem-convert(6px);
+  border-radius: (8px);
+  .title {
+    font-size: rem-convert(16px);
+    line-height: rem-convert(20px);
+    font-weight: 600;
+  }
+  .content {
+    line-height: rem-convert(24px);
+  }
+}

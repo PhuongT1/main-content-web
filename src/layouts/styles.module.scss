@@ -1,0 +1,22 @@
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+@import 'sass-rem';
+
+.nonauth_wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.create_project_page_main_content {
+  :global {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+}

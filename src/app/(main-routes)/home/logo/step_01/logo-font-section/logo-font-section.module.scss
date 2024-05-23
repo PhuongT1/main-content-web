@@ -1,0 +1,42 @@
+@import 'sass-rem';
+
+.logoFontSection {
+  padding: 0 rem-convert(24px) rem-convert(20px) rem-convert(24px);
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  .searchFont {
+    padding: rem-convert(30px);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: rem-convert(20px);
+
+    .searchInput {
+      min-width: 400px;
+    }
+  }
+
+  .fontCard {
+    padding: rem-convert(20px) rem-convert(16px);
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .schumpeter {
+      margin-top: 32px;
+      font-size: 25px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

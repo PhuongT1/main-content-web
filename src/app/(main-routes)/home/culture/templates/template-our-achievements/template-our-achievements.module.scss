@@ -1,0 +1,29 @@
+@import 'sass-rem';
+
+.achievement {
+  position: relative;
+  padding-left: 13px;
+}
+
+.achievement::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  width: 1px;
+  height: 100%;
+  background-color: #3c82f999;
+}
+
+.achievement::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 3px;
+  height: 42px;
+  background-color: #3c82f9;
+  border-radius: 3px;
+}

@@ -1,0 +1,57 @@
+@import "sass-rem";
+
+.layer_title {
+  display: flex;
+  align-items: center;
+  margin: rem-convert(0 auto 20px);
+  &.border {
+    padding-top: rem-convert(40px);
+    border-top: 1px solid #37393e;
+  }
+
+  h2 {
+    font-size: rem-convert(24px);
+    line-height: rem-convert(28.8px);
+    font-weight: 700;
+  }
+
+  .card_note {
+    color: #44bdbd;
+    font-size: rem-convert(16px);
+    margin-left: rem-convert(10px);
+  }
+}
+
+.sub_title {
+  color: #9f9ea4 !important;
+  margin-bottom: rem-convert(30px) !important;
+}
+
+.business_idea {
+  margin-bottom: rem-convert(40px);
+  background-color: #252629;
+  padding: rem-convert(20px 24px);
+  border-radius: rem-convert(10px);
+}
+
+.btn_edit {
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.category {
+  .item_buton {
+    background-color: #37393e;
+    border-radius: rem-convert(10px);
+    padding: rem-convert(16px 20px);
+    gap: rem-convert(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    height: 100%;
+    p {
+      font-weight: 600;
+    }
+  }
+}

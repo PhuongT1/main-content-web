@@ -1,0 +1,24 @@
+@import 'sass-rem';
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer_box {
+  padding: rem-convert(52px 30px);
+  flex-direction: column;
+  @extend .center;
+
+  title {
+    font-size: em-convert(20px);
+    font-size: rem-convert(20px);
+  }
+
+  .sub_title {
+    margin-top: rem-convert(30px);
+    font-size: rem-convert(16px);
+    margin: rem-convert(12px 0 40px 0);
+  }
+}

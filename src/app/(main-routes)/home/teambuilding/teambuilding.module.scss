@@ -1,0 +1,93 @@
+@import 'sass-rem';
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_menu {
+  :global(.MuiButton-startIcon) {
+    margin-right: 0;
+  }
+}
+
+.btn_menu {
+  @extend .d-flex;
+
+  border-radius: rem-convert(8px);
+  background-color: #191a1c;
+  padding: 10px 12px;
+  color: white;
+}
+
+.d-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ir_card_member {
+  border-radius: 8px;
+}
+
+.layout_01_teambuilding,
+.layout_03_teambuilding {
+  :global(.card-row) {
+    width: calc(33.3% - 8px);
+    aspect-ratio: 3/1;
+
+    :global(.card-member-avt) {
+      width: 26%;
+      aspect-ratio: 1;
+      position: relative;
+    }
+  }
+
+  :global(.card-column) {
+    width: calc(25% - 8px);
+    aspect-ratio: 1.14;
+
+    :global(.card-member-avt) {
+      width: 37.5%;
+      aspect-ratio: 1;
+      position: relative;
+    }
+  }
+
+  :global(.card-member) {
+    padding: 12px 10px;
+  }
+
+  :global(.react-flow__handle) {
+    opacity: 0;
+  }
+}
+
+.layout_02_teambuilding {
+  :global(.card-row) {
+    width: calc(33.3% - 8px);
+    aspect-ratio: 3/1;
+
+    :global(.card-member-avt) {
+      width: 26%;
+      aspect-ratio: 1;
+      position: relative;
+    }
+  }
+
+  :global(.card-column) {
+    width: calc(25% - 8px);
+    aspect-ratio: 1.14;
+
+    :global(.card-member-avt) {
+      width: 35.8%;
+      aspect-ratio: 1;
+      position: relative;
+    }
+  }
+
+  :global(.card-member) {
+    padding: 12px 8px;
+  }
+}

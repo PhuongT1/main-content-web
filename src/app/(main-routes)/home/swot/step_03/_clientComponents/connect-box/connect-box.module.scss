@@ -1,0 +1,90 @@
+@import 'sass-rem';
+@import '../../../../../../../assets/scss/variables';
+
+.table-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    margin: auto;
+    width: 30%;
+    padding: rem-convert(16px);
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: rem-convert(10px);
+    padding: rem-convert(16px 20px);
+    padding-right: rem-convert(10px);
+    width: 70%;
+    height: 100%;
+    align-self: flex-start;
+    min-height: rem-convert(162px);
+    .group-text {
+      display: flex;
+      gap: rem-convert(20px);
+      padding: rem-convert(10px 20px);
+      border-radius: rem-convert(10px);
+      &.active {
+        border: 1px solid #3c82f9;
+        background: rgba(60, 130, 249, 0.1);
+      }
+    }
+  }
+}
+
+.table {
+  display: flex;
+  border-radius: rem-convert(10px);
+  flex-direction: column;
+  width: 50%;
+}
+
+.parent-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem-convert(10px);
+  padding: rem-convert(16px 20px);
+  border-radius: rem-convert(10px);
+  &.active {
+    border: 1px solid #3c82f9;
+    background: rgba(60, 130, 249, 0.1);
+  }
+  .box-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: rem-convert(10px);
+
+    .tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: rem-convert(4px 10px);
+      border-radius: rem-convert(6px);
+    }
+  }
+}
+
+.dot {
+  width: rem-convert(10px);
+  height: rem-convert(10px);
+  border-radius: 999px;
+  &.active {
+    background: #3c82f9;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wrapper-right {
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(64px);
+}

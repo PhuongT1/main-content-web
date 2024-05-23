@@ -1,0 +1,41 @@
+@import 'sass-rem';
+
+// Overwrite Stepper @Mui
+
+.layer_item {
+  padding: rem-convert(16px 20px);
+  // align-items: center;
+  // flex-grow: 1;
+  // min-width: 0;
+  gap: rem-convert(16px);
+  border-radius: (8px);
+
+  .title {
+    font-size: rem-convert(16px);
+    line-height: rem-convert(20px);
+    font-weight: 600;
+    min-width: 0;
+  }
+
+  .content {
+    flex-grow: 1;
+    min-width: 0;
+    width: 0;
+    line-height: rem-convert(24px);
+
+    &.truncate {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .layer_button {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import 'sass-rem';
+
+.logo {
+  &_wrapper {
+    padding: 0 0 rem-convert(8px) 0;
+    border: 1px solid;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &_active {
+    border-style: dashed;
+  }
+}
+
+.logo_text {
+  display: flex;
+  gap: rem-convert(8px);
+  align-items: center;
+  margin-left: rem-convert(-8px);
+  padding-top: rem-convert(8px);
+}
+
+.logo_circle {
+  width: rem-convert(20px);
+  height: rem-convert(20px);
+  border-radius: 50%;
+}
+
+.logo_input {
+  background: transparent;
+  border: none;
+  font-size: rem-convert(16px);
+  font-weight: 600;
+  &:focus {
+    outline: none;
+  }
+}

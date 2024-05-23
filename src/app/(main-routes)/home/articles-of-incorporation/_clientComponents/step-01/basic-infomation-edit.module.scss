@@ -1,0 +1,108 @@
+@import 'sass-rem';
+
+.organization {
+  width: 100%;
+  max-width: 100%;
+  max-height: rem-convert(454px);
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(30px);
+
+  .organization_tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem-convert(56px);
+    padding: rem-convert(4px 24px);
+    flex-shrink: 0;
+    margin: 0;
+    background-color: #252629;
+    border-radius: rem-convert(10px);
+
+    .tab {
+      padding: rem-convert(8px 20px);
+    }
+  }
+
+  .organization_checkbox_list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    overscroll-behavior-y: contain;
+    flex: 1;
+  }
+}
+
+.organization_selected_box {
+  width: 100%;
+  padding: rem-convert(20px 24px);
+  border-radius: rem-convert(10px);
+  border: 1px solid #37393e;
+  min-height: rem-convert(100px);
+
+  .total_list {
+    color: #44bdbd;
+    display: block !important;
+    /* text/md-150/semibold */
+    font-size: rem-convert(16px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 24px */
+  }
+
+  .organization_selected_list {
+    margin-top: rem-convert(18px);
+
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: minmax(200px, 600px);
+    gap: rem-convert(12px);
+
+    .organization_selected_item {
+      border-radius: rem-convert(10px);
+      -webkit-user-select: none;
+      user-select: none;
+      padding: rem-convert(16px 20px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: rem-convert(348px);
+      min-width: rem-convert(200px);
+      max-width: rem-convert(600px);
+      min-height: rem-convert(52px);
+      align-items: center;
+      background-color: #191a1c;
+      gap: 8px;
+      flex-shrink: 0;
+
+      p {
+        overflow: hidden;
+        color: #edeef1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        /* text/md-120/semibold */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        /* 19.2px */
+      }
+
+      .remove_icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

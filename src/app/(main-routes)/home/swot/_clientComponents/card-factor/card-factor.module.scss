@@ -1,0 +1,45 @@
+@import 'sass-rem';
+@import '../../../../../../assets/scss/variables';
+
+.card-factor {
+  border-radius: rem-convert(10px);
+  .header-title {
+    display: flex;
+    align-items: center;
+    gap: rem-convert(6px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: rem-convert(20px 16px);
+    z-index: 999;
+    border-radius: rem-convert(10px);
+  }
+  .line {
+    height: 1px;
+    margin: rem-convert(0 16px);
+  }
+  .list-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem-convert(12px);
+    margin-top: rem-convert(16px);
+    margin-bottom: rem-convert(16px);
+  }
+}
+
+.Strength {
+  color: $blue-500 !important;
+}
+
+.Weakness {
+  color: $mint-500 !important;
+}
+
+.Opportunity {
+  color: $yellow-f8 !important;
+}
+
+.Threat {
+  color: $red-500 !important;
+}

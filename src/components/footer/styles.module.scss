@@ -1,0 +1,26 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+@import 'sass-rem';
+
+.footer {
+  .logo {
+    height: rem-convert(24px);
+    width: rem-convert(81px);
+  }
+  .about_us_link_box {
+    a {
+      text-decoration: none;
+    }
+    .link_text {
+      text-decoration: underline;
+    }
+  }
+  .company_info {
+    .vertical_divider {
+      height: rem-convert(16px);
+      width: rem-convert(1px);
+      background-color: $background;
+      opacity: 20%;
+    }
+  }
+}

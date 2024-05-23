@@ -1,0 +1,28 @@
+@import 'sass-rem';
+
+.step_content {
+  .btn_wrapper {
+    margin-top: rem-convert(60px);
+    gap: rem-convert(20px);
+    justify-content: center;
+
+    button {
+      max-width: rem-convert(160px);
+    }
+  }
+}
+
+.tip_content {
+  white-space: break-spaces;
+}
+
+.editor_flow {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: rem-convert(640px);
+  height: rem-convert(640px);
+  padding: rem-convert(24px);
+}

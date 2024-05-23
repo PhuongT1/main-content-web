@@ -1,0 +1,38 @@
+@import 'sass-rem';
+
+.selected_item {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  border-radius: rem-convert(10px);
+  padding: rem-convert(16px 20px);
+  gap: rem-convert(12px);
+  width: 100%;
+  font-weight: 600;
+  line-height: 150%;
+  height: 100%;
+
+  .content {
+    flex-grow: 1;
+  }
+  .remove_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+  .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: rem-convert(6px);
+    background: #3c82f9;
+    padding: rem-convert(4px 10px);
+    min-width: rem-convert(120px);
+    max-width: rem-convert(240px);
+  }
+}

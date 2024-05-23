@@ -1,0 +1,43 @@
+@import 'sass-rem';
+
+.center-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_title {
+  @extend .center-flex;
+  margin: rem-convert(40px auto);
+
+  .title {
+    @extend .center-flex;
+    align-items: center;
+  }
+
+  .right_title {
+    @extend .center-flex;
+    align-items: center;
+    // color: #ffffff;
+    button {
+      padding: rem-convert(10px 18px);
+      border-radius: rem-convert(8px);
+      color: #ffffff;
+    }
+  }
+
+  .border {
+    width: rem-convert(2px);
+    height: rem-convert(20px);
+    background-color: #9f9ea4;
+    margin: rem-convert(auto 12px);
+    display: inline-block;
+  }
+
+  button {
+    max-height: 40px;
+    margin-left: rem-convert(12px);
+    padding: rem-convert(10px 18px);
+    border-radius: rem-convert(8px);
+    background: #191a1c;
+  }
+}

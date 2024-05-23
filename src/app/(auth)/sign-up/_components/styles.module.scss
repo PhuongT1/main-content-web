@@ -1,0 +1,14 @@
+.content {
+    border: 1px solid rgb(128, 123, 123);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.content_parent {
+    height: 0px;
+    transition: height ease 0.9s;
+}
+
+.content_show {
+    height: 200px;
+}

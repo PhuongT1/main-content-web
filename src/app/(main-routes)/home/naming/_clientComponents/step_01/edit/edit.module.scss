@@ -1,0 +1,53 @@
+@import 'sass-rem';
+
+.layer_title {
+  .card_note {
+    font-size: rem-convert(16px);
+    margin-left: rem-convert(10px);
+  }
+}
+
+.btn_active {
+  gap: rem-convert(15px);
+  justify-content: center;
+  button {
+    max-width: 160px;
+  }
+}
+
+.layer_detail {
+  padding: rem-convert(16px 20px);
+  margin: rem-convert(24px auto 60px);
+  border-radius: rem-convert(8px);
+  line-height: rem-convert(24px);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row !important;
+  transition: 0.5s all;
+
+  .layer_button {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      width: auto;
+      padding: 0;
+      text-decoration: underline;
+    }
+  }
+}
+
+.layer_translate {
+  border-radius: rem-convert(10px);
+  padding: rem-convert(20px 24px);
+  margin: rem-convert(20px auto);
+}
+
+.tab_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-left: rem-convert(10px);
+  }
+}

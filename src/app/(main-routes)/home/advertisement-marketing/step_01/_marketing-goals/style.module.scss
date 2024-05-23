@@ -1,0 +1,16 @@
+@import 'sass-rem';
+
+.boxLayoutWrapper {
+}
+
+.boxCardSelectedWrapper {
+  min-height: rem-convert(100px);
+  margin-top: rem-convert(20px);
+
+  .remove_icon {
+    cursor: pointer;
+    position: absolute;
+    top: rem-convert(14px);
+    right: rem-convert(10px);
+  }
+}

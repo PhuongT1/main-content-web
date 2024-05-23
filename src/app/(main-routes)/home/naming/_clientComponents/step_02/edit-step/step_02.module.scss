@@ -1,0 +1,25 @@
+@import 'sass-rem';
+
+.layer_step {
+  margin: rem-convert(20px 0);
+  .title {
+    font-size: rem-convert(20px);
+    font-weight: 700;
+    margin-top: rem-convert(40px);
+    span {
+      font-weight: 600;
+      font-size: rem-convert(16px);
+    }
+  }
+
+  .sub_title {
+    font-size: rem-convert(16px);
+    margin: rem-convert(15px auto 20px);
+  }
+}
+
+.card_item {
+  border-radius: rem-convert(10px);
+  padding: rem-convert(0 20px 20px 0);
+  background-color: #191a1c;
+}

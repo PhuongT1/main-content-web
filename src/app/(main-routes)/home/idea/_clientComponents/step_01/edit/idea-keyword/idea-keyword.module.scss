@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+}
+.wrapper_box_ai {
+  display: flex;
+  min-height: 280px;
+  max-height: 280px;
+  padding: 20px 20px 0px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 10px;
+}
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  margin-bottom: 12px !important;
+}
+.subt_title {
+  text-align: center;
+
+  /* text/md-150/regular */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.box_selected_content {
+  text-transform: capitalize;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}

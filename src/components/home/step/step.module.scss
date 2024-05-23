@@ -1,0 +1,140 @@
+@import 'sass-rem';
+
+// Overwrite Stepper @Mui
+.stepper_layer {
+  row-gap: rem-convert(20px);
+
+  :global(.MuiStepLabel-label) {
+    &:global(.Mui-disabled) {
+      &:not(:global(.Mui-completed)) {
+        display: none;
+      }
+    }
+  }
+
+  :global(.MuiStepLabel-iconContainer) {
+    padding-right: 0;
+  }
+
+  :global(.MuiStepConnector-lineVertical) {
+    border-left: 0;
+    min-height: auto;
+  }
+
+  :global(> .Mui-completed) {
+    .icon_complete {
+      display: flex;
+    }
+  }
+
+  :global(.MuiStepConnector-vertical) {
+    display: none;
+  }
+}
+
+// Overwrite Stepper @Mui
+.stepper_layer_right {
+  :global(> .Mui-completed) {
+    border-radius: rem-convert(10px);
+    padding: rem-convert(16px 24px);
+    .step_desk {
+      margin-bottom: rem-convert(10px);
+    }
+    .icon_complete {
+      display: flex;
+    }
+  }
+}
+
+.d_flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex_center {
+  justify-content: center;
+  @extend .d_flex;
+}
+
+.stepper_layer {
+  padding: 0 !important;
+  row-gap: rem-convert(24px);
+
+  .step_item {
+    width: rem-convert(4vw);
+    height: rem-convert(4vw);
+    font-size: rem-convert(12px);
+    flex-direction: column;
+    border-radius: 50%;
+    line-height: 1.2;
+    cursor: pointer;
+    position: relative;
+    max-width: rem-convert(80px);
+    max-height: rem-convert(80px);
+    min-height: rem-convert(50px);
+    min-width: rem-convert(50px);
+    @extend .flex_center;
+
+    .number {
+      font-size: rem-convert(20px);
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+
+  .step_label {
+    line-height: rem-convert(28px);
+    font-weight: 600;
+  }
+
+  .stepper_content {
+    border-left: 0;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: 1500px) {
+    .step_item {
+      .number {
+        font-size: rem-convert(28px);
+      }
+    }
+  }
+}
+
+.stepper_layer_right {
+  .layer_title {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .expand {
+    @extend .d_flex;
+    flex-shrink: 0;
+  }
+
+  .active_step {
+    border-radius: rem-convert(10px);
+    padding: rem-convert(16px 24px);
+    padding-bottom: rem-convert(40px);
+
+    &:not(:global(.Mui-completed)) {
+      .step_label {
+        flex-direction: row;
+        column-gap: rem-convert(12px);
+        @extend .d_flex;
+      }
+
+      .step_desk {
+        border-radius: rem-convert(100px);
+        display: inline-block;
+        padding: rem-convert(4px 16px);
+      }
+
+      .expand {
+        display: none;
+      }
+    }
+  }
+}

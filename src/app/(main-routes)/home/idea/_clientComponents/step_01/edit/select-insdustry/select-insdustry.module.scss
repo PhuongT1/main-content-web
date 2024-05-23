@@ -1,0 +1,17 @@
+@import 'sass-rem';
+
+.insdustry {
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(20px);
+  width: 100%;
+
+  &_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: rem-convert(10px);
+    width: 100%;
+  }
+}

@@ -1,0 +1,144 @@
+@import "sass-rem";
+
+.layer_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem-convert(10px);
+
+  h2 {
+    font-size: rem-convert(24px);
+    line-height: rem-convert(28.8px);
+    font-weight: 700;
+  }
+
+  .card_note {
+    font-size: rem-convert(16px);
+    margin-left: rem-convert(10px);
+  }
+}
+
+.business_idea {
+  margin-bottom: rem-convert(50px);
+}
+
+.btn_active {
+  gap: rem-convert(15px);
+  justify-content: center;
+  button {
+    max-width: 160px;
+  }
+}
+
+.layer_detail {
+  // background-color: #0e2225;
+  padding: rem-convert(16px 20px);
+  margin: rem-convert(24px auto 60px);
+  border-radius: rem-convert(8px);
+  line-height: rem-convert(24px);
+  display: flex;
+  align-items: start;
+  flex-direction: row !important;
+  transition: 0.5s all;
+
+  // &.show_tip {
+  //   flex-direction: column !important;
+  //   max-width: 100%;
+  //   .content {
+  //     max-width: 100%;
+  //   }
+  //   .layer_button {
+  //     width: 100%;
+  //   }
+  // }
+
+  // .title {
+  //   font-weight: 600;
+  //   // color: #00c7be;
+  //   margin-right: rem-convert(12px);
+  // }
+  // .content {
+  //   flex-wrap: nowrap;
+  //   max-width: 100%;
+  //   width: 0;
+  //   line-height: rem-convert(24px);
+  // }
+
+  .layer_button {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      width: auto;
+      padding: 0;
+      text-decoration: underline;
+      // color: #44bdbd;
+    }
+  }
+}
+
+.layer_translate {
+  border-radius: rem-convert(10px);
+  padding: rem-convert(20px 24px);
+  margin: rem-convert(24px auto);
+}
+
+.tab_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin-left: rem-convert(10px);
+  }
+}
+
+.switch_tabs {
+  display: flex;
+  align-items: center;
+  padding: rem-convert(6px);
+  border-radius: rem-convert(20px);
+  height: rem-convert(41px);
+  border: 1px solid #37393e;
+
+  .tab {
+    display: inline-flex;
+    width: 53px;
+    height: 30px;
+    font-size: 14px;
+    color: #9498a3;
+    border-radius: rem-convert(99px);
+    padding: rem-convert(6px 16px);
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .tab.active {
+    background-color: #3c82f9;
+    color: #252629;
+    animation: transition 0.25s linear;
+  }
+}
+
+@keyframes transition {
+  0% {
+    opacity: 0;
+    // transform: translateX(-54px);
+  }
+
+  100% {
+    opacity: 1;
+    // transform: translateX(0);
+  }
+}
+
+.tree_organization_title {
+  /* 20 Sb_제목 */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

@@ -1,0 +1,40 @@
+@import 'sass-rem';
+
+.d_flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex_center {
+  justify-content: center;
+  @extend .d_flex;
+}
+
+.card_item {
+  background-image: none;
+  background-color: transparent;
+  height: 100%;
+  border-radius: rem-convert(10px) !important;
+
+  button {
+    height: 100%;
+    padding: rem-convert(14px) rem-convert(20px) !important;
+    border-radius: rem-convert(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family: inherit;
+    background-color: inherit;
+  }
+
+  .card_icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.active {
+    border-radius: rem-convert(10px);
+  }
+}

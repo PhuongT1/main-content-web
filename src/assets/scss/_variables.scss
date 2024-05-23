@@ -1,0 +1,70 @@
+@import 'sass-rem';
+
+// Screen sizes
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1300px;
+$screen-full: 1400px;
+
+// Colors
+$grey98: #989898;
+$greyf3: #f3f3f3;
+$blackBasic: #000000;
+$whiteBasic: #ffffff;
+
+// padding
+$paddingNormal: 20px;
+
+// Colors
+$black-common: #2c333a;
+$border-grey: #d9d9d9;
+$color-title: #111111;
+$background: #ffffff;
+$white-basic: #fff;
+$grey-e9: #e9ecef;
+$grey-9a: #9a9a9a;
+$grey-74: #747274;
+$grey-de: #dee2e6;
+$grey-88: #8898aa;
+$grey-f7: #f7f7f7;
+$grey-65: #656565;
+$grey-d9: #d9d9d9;
+$white-basic: #ffffff;
+$black-basic: #000000;
+$background-wh: #f6f6f6;
+$greyAA: #aaaaaa;
+$redF7: #ff7f7c;
+$grey74: #747274;
+$grey63: #636363;
+$greyB1: #b1b1b1;
+$black-1F: #1f1e25;
+$grey-400: #757575;
+$grey-300: #d2d2d2;
+$grey-200: #e3e3e3;
+$grey-100: #e5e5e5;
+$blue-900: #0057ff;
+$grey-6b: #6b6b6b;
+$grey-c8: #c8c8c8;
+$grey-f5: #f5f5f5;
+$grey-f6: #f6f6f6;
+$grey-e7: #e7e7e7;
+$error: #ff3e3e;
+$main-blue: #0057ff;
+$kakao-yellow: #ffcf27;
+$blue-bold: #002469;
+$green-500: #0da500;
+$grey-e3: #e3e3e3;
+$gray50: #62626c;
+$blue-500: #3c82f9;
+$mint-500: #44bdbd;
+$yellow-f8: #f8ba1a;
+$red-500: #ea3939;
+
+//primary
+$primary_color: #44bdbd;
+$bg_dark_color: #191a1c;
+
+// radius
+$global_radius: rem-convert(10px);

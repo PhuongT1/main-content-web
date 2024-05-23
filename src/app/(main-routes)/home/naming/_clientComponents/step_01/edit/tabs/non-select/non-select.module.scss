@@ -1,0 +1,15 @@
+@import 'sass-rem';
+
+.layer_box {
+  padding: rem-convert(50px 30px);
+  border-radius: rem-convert(10px);
+  margin-top: rem-convert(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .sub_title {
+    margin-top: rem-convert(30px);
+    font-size: rem-convert(20px);
+  }
+}

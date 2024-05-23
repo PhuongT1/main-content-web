@@ -1,0 +1,18 @@
+@import 'sass-rem';
+
+.translate_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem-convert(32px);
+  padding: rem-convert(30px 0);
+}
+
+.item_box {
+  border-radius: rem-convert(10px);
+  padding: rem-convert(0 20px 20px 20px);
+  .label_box {
+    margin-bottom: rem-convert(27px);
+    color: #00c7be;
+  }
+}

@@ -1,0 +1,21 @@
+@import 'sass-rem';
+
+.dropdownCustom {
+    position: relative;
+
+    .dropdownItems {
+        position: absolute;
+        top: 120%;
+        right: 0;
+        z-index: 99999;
+        padding: 12px 0;
+        box-sizing: border-box;
+        font-size: 16px;
+        border-radius: 10px;
+
+        .dropdownItem {
+            padding: 12px 16px;
+            box-sizing: border-box;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import 'sass-rem';
+
+.d_flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex_center {
+  justify-content: center;
+  @extend .d_flex;
+}
+
+.card_item {
+  background-image: none;
+  height: 100%;
+  border-radius: rem-convert(10px) !important;
+
+  > button {
+    height: 100%;
+    padding: rem-convert(20px);
+    border-radius: rem-convert(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family: inherit;
+    background-color: initial;
+  }
+
+  .card_title {
+    font-size: rem-convert(16px);
+    font-weight: 600;
+    margin-bottom: rem-convert(10px);
+    line-height: 150%;
+    &.no_subTitle {
+      margin-bottom: 0;
+    }
+    &.card_title_icon {
+      justify-content: space-between;
+      gap: rem-convert(10px);
+      @extend .d_flex;
+    }
+  }
+
+  .card_sub_title {
+    font-size: rem-convert(14px);
+    font-weight: 400;
+    line-height: rem-convert(21px);
+  }
+
+  .card_content {
+    margin-top: rem-convert(10px);
+    border-radius: rem-convert(10px);
+  }
+
+  .card_icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.active {
+    border-radius: rem-convert(10px);
+  }
+}

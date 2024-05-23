@@ -1,0 +1,30 @@
+@import 'sass-rem';
+
+.toolbar {
+  width: 100%;
+  flex-shrink: 0;
+  height: rem-convert(42px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: rem-convert(8px);
+  padding: rem-convert(8px);
+  border-radius: rem-convert(10px);
+
+  &_item {
+    position: relative;
+    display: flex;
+    height: 28px;
+    padding: 0px 4px 0px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &_color_picker {
+    position: absolute;
+    left: rem-convert(14px);
+    top: rem-convert(36px);
+    z-index: 100;
+  }
+}

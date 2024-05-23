@@ -1,0 +1,50 @@
+@import 'sass-rem';
+@import '../../assets//scss/variables';
+
+#button_display_date {
+  border-radius: rem-convert(10px) !important;
+  display: flex;
+  min-width: 100px;
+  width: 100%;
+  min-height: 57px;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+#btn_datepicker_confirm {
+  color: #edeef1;
+  /* Buttom/Button 20 */
+  font-size: rem-convert(14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 17.5px */
+  border-radius: var(--Dimensions-Radius-full, 9999px);
+  background: var(--color-blue-500, #3c82f9);
+
+  display: flex;
+  padding: 13px var(--Dimensions-Spacing-Space-24, 24px);
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.datepicker_menu {
+  transform: translateY(10px);
+  border-radius: rem-convert(10px);
+  overflow: hidden;
+}
+
+.datepicker_paper {
+  width: rem-convert(424px);
+  border-radius: $global_radius;
+  background-color: $bg_dark_color;
+}
+.number_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem-convert(40px);
+  height: rem-convert(40px);
+  border-radius: 100rem;
+}

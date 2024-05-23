@@ -1,0 +1,108 @@
+@import '../../assets/scss/_variables.scss';
+@import '../../assets/scss/_mixins.scss';
+
+.content-drawer {
+  .close-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    padding: rem-convert(34px) rem-convert(22px);
+  }
+
+  .button-drawer {
+    padding: 0;
+  }
+
+  .divider {
+    background: $grey-f5;
+    width: 100%;
+    height: rem-convert(8px);
+  }
+
+  .login-box {
+    //background: $black-1F;
+    padding: rem-convert(24px) rem-convert(16px);
+    .right-title {
+      right: 0;
+      color: $white-basic;
+      padding: rem-convert(6px) rem-convert(12px);
+      background-color: #313038;
+      border-radius: rem-convert(8px);
+      float: right;
+      display: flex;
+      align-items: center;
+      text-decoration: unset;
+      svg {
+        margin-right: rem-convert(4px);
+      }
+      cursor: pointer;
+    }
+    .top-title-one {
+      display: inline-block;
+      color: #000000;
+      margin-bottom: rem-convert(66px);
+    }
+    .link-login {
+      text-decoration: none;
+
+      .top-title-one {
+        display: inline-block;
+        color: #000000;
+        margin-bottom: rem-convert(66px);
+      }
+      .top-title-two {
+        color: $grey-400;
+        margin-right: rem-convert(13px);
+      }
+    }
+    .bottom-title-two {
+      color: $blue-900;
+    }
+  }
+
+  .list-item {
+    padding: 0;
+    .title-item {
+      margin: 0;
+      span {
+      }
+    }
+    .button-link {
+      padding: 0;
+      height: 100%;
+      &:hover {
+        background: unset;
+      }
+    }
+    .item-link {
+      &:hover {
+        background: $grey-300;
+      }
+      padding: 0 rem-convert(22px) 0 rem-convert(16px);
+      height: 56px;
+    }
+    .active-item-link {
+      @extend .item-link;
+      background: $grey-300;
+    }
+    .collapse {
+      .collapse-list {
+        .item-link {
+          padding-left: rem-convert(40px);
+        }
+      }
+    }
+  }
+  .bottom-title-single {
+    @extend .bottom-title-one;
+    cursor: pointer;
+    margin-top: rem-convert(60px);
+    width: 100%;
+    text-align: center;
+  }
+  .bottom-title-one {
+    display: inline-block;
+    color: $grey-400;
+    margin-right: rem-convert(5px);
+  }
+}

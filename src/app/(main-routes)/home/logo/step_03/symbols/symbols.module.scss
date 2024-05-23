@@ -1,0 +1,31 @@
+@import 'sass-rem';
+
+.symbolTabs {
+  display: flex;
+  gap: 32px;
+
+  .tab {
+    position: relative;
+    display: flex;
+    gap: '2px';
+    align-items: center;
+    cursor: pointer;
+  }
+  .tab:not(:last-child)::after {
+    content: '';
+    height: 18px;
+    width: 1px;
+
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: #edeef1;
+  }
+}
+
+.colorActive {
+  border: 2px solid #0cbe93;
+  outline: 2px solid #3c82f9;
+}

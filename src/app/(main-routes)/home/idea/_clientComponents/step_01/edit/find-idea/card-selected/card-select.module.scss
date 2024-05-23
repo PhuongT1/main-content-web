@@ -1,0 +1,44 @@
+@import 'sass-rem';
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(12px);
+}
+.card {
+  display: flex;
+  min-height: 52px;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 10px;
+}
+.wrapper_ideas {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 10px;
+  flex: 1;
+}
+.box_idea {
+  display: flex;
+  height: rem-convert(44px);
+  min-width: rem-convert(200px);
+  padding: 10px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+
+  &_text {
+    display: flex;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    /* 16 Sb_본문글씨 */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

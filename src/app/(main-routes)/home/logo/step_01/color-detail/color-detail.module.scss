@@ -1,0 +1,46 @@
+@import 'sass-rem';
+
+.colorDetail {
+  padding: rem-convert(20px) rem-convert(24px);
+  box-sizing: border-box;
+  margin-top: rem-convert(20px);
+  border-radius: 10px;
+
+  .tabs {
+    margin-bottom: rem-convert(20px);
+
+    .tab {
+      margin-right: rem-convert(20px);
+      font-size: 18px;
+      font-weight: 400;
+      padding-bottom: 8px;
+      cursor: pointer;
+    }
+  }
+
+  .colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .color {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      margin-right: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .colorPickText {
+        font-size: 10px;
+        white-space: nowrap;
+      }
+    }
+
+    .color:last-child {
+      margin-right: 0;
+    }
+  }
+}

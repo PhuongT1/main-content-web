@@ -1,0 +1,54 @@
+@import 'sass-rem';
+
+.business_idea {
+  border: 1px solid;
+  border-radius: rem-convert(10px);
+  padding: rem-convert(20px);
+  margin: rem-convert(20px 0 50px);
+
+  .layer_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem-convert(20px);
+    &.border {
+      padding-top: rem-convert(50px);
+      border-top: 2px solid #62626c;
+    }
+
+    h2 {
+      font-size: rem-convert(24px);
+      line-height: rem-convert(28.8px);
+      font-weight: 700;
+    }
+
+    .card_note {
+      color: #44bdbd;
+      font-size: rem-convert(16px);
+      margin-left: rem-convert(10px);
+    }
+  }
+}
+
+.category {
+  .item_buton {
+    border-radius: rem-convert(10px);
+    padding: rem-convert(6px 12px 6px 24px);
+    min-height: rem-convert(56px);
+    gap: rem-convert(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    height: 100%;
+    p {
+      font-weight: 600;
+    }
+  }
+  .btn_create {
+    color: #3c82f9;
+    border-radius: rem-convert(10px);
+    justify-content: center;
+    background-color: #191a1c;
+    height: 100%;
+  }
+}

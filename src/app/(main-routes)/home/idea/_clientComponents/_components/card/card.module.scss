@@ -1,0 +1,62 @@
+@import 'sass-rem';
+
+.card {
+  padding: rem-convert(30px 20px);
+  display: flex;
+  gap: rem-convert(20px);
+  flex-direction: column;
+  border-radius: rem-convert(10px);
+  width: rem-convert(448px);
+  justify-content: center;
+  align-items: center;
+  height: rem-convert(184px);
+  position: relative;
+  transition: fadeIn 0.2s linear;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &_radio {
+    display: inline;
+    z-index: 10;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  &_title {
+    text-align: center;
+    /* text/xl-120/semibold */
+    font-size: rem-conver(20px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    margin-bottom: 4px;
+  }
+
+  &_sub_title {
+    text-align: center;
+
+    /* text/md-150/regular */
+    font-size: rem-conver(16px);
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+}
+.card.active {
+  border-color: #3c82f9;
+  background-color: rgba(60, 130, 249, 0.1);
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(4px);
+  }
+  50% {
+    transform: scale(2px);
+  }
+  100% {
+    transform: scale(0px);
+  }
+}

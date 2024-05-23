@@ -1,0 +1,15 @@
+@import 'sass-rem';
+@import '../../../../../../../assets/scss/variables';
+
+.slogan_AI_area {
+  border-radius: rem-convert(10px);
+  width: 100%;
+  .default {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-block: rem-convert(66px);
+  }
+}

@@ -1,0 +1,21 @@
+@import '../assets/scss/_variables.scss';
+@import '../assets/scss/_mixins.scss';
+
+.container {
+  padding: 0 2rem;
+}
+.main {
+  padding: 4rem 0;
+  flex: 1;
+  @include flex-center-column;
+}
+
+.banner {
+  height: 10rem;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: $primaryColorOne;
+  .p {
+    font-size: 2rem;
+  }
+}

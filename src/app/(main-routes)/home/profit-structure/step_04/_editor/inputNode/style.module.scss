@@ -1,0 +1,34 @@
+@import 'sass-rem';
+
+.node_wrapper {
+  padding: rem-convert(14px 16px);
+  height: rem-convert(74px);
+  width: rem-convert(240px);
+  border: 2px solid;
+  border-radius: rem-convert(100px);
+}
+.node_input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: rem-convert(20px);
+  line-height: rem-convert(24px);
+  font-weight: 600;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+}
+
+.node_note_wrapper {
+  padding: rem-convert(14px 16px);
+  height: rem-convert(54px);
+  width: rem-convert(172px);
+  border: 2px solid;
+  border-radius: rem-convert(8px);
+}
+.node_note_input {
+  @extend .node_input;
+  font-size: rem-convert(16px);
+}

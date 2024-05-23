@@ -1,0 +1,37 @@
+@import '../../assets/scss/_variables.scss';
+@import '../../assets/scss/_mixins.scss';
+@import 'sass-rem';
+
+.sign_in {
+  @include flex-center-column;
+  border-radius: rem-convert(24px);
+  max-width: rem-convert(478px);
+  width: 100%;
+  .bottom_signup {
+    text-align: right;
+    a {
+      margin-left: 20px;
+    }
+  }
+  .icon {
+    color: black;
+  }
+  .form {
+    width: 100%;
+  }
+  .form_signup {
+    margin: rem-convert(40px) 0 0 0;
+    width: 100%;
+  }
+  .register_wrapper {
+    display: flex;
+    gap: rem-convert(4px);
+  }
+}
+
+.send_email {
+  @include flex-center-column;
+  border-radius: rem-convert(24px);
+  max-width: rem-convert(561px);
+  width: 100%;
+}

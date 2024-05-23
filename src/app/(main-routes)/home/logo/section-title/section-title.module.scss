@@ -1,0 +1,16 @@
+@import 'sass-rem';
+
+.title {
+    margin-bottom: 20px;
+
+    .maintitle {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .subTitle {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

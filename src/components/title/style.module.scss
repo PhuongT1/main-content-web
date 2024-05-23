@@ -1,0 +1,13 @@
+@import 'sass-rem';
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem-convert(10px);
+
+  h2 {
+    font-size: rem-convert(24px);
+    line-height: rem-convert(28.8px);
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,19 @@
+@import 'sass-rem';
+
+.box {
+  padding: rem-convert(20px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: rem-convert(10px);
+}
+
+.box_oulined {
+  padding: rem-convert(24px);
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+
+  border-radius: rem-convert(10px);
+}

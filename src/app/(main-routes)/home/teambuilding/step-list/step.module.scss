@@ -1,0 +1,93 @@
+@import 'sass-rem';
+@import '../../../../../assets/scss/variables';
+// common styles
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inline_flex_center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline_flex_between {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//========================================================================
+.icon_checked_box {
+  position: absolute;
+  right: rem-convert(-16px);
+  top: rem-convert(-10px);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #101014;
+  position: absolute;
+  border: 1.5px solid #2d68fe;
+  border-radius: 50%;
+
+  width: rem-convert(24px);
+  height: rem-convert(24px);
+}
+
+.label_box {
+  @extend .flex_center;
+  padding: 4px 16px;
+  border-radius: 100px;
+  background-color: #252629;
+}
+
+.label_title {
+  font-size: rem-convert(16px);
+  font-weight: 600;
+  color: $primary_color !important;
+  line-height: 150%;
+  font-style: normal;
+}
+
+.circle_box {
+  @extend .flex_center;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  .circle_box_inner {
+    @extend .inline_flex_center;
+    position: relative;
+    flex-direction: column;
+  }
+}
+.step {
+  padding: 24px;
+
+  :global(.MuiStepLabel-iconContainer) {
+    display: none;
+  }
+}
+.step_content {
+  border-left: none !important;
+  border: none;
+  padding: 0 !important;
+  margin-left: 0 !important;
+}
+
+.step_label_box {
+  @extend.flex_between;
+  padding: 24px;
+  gap: 40px;
+  align-items: end;
+  background-color: #191a1c;
+  border-radius: 10px;
+}

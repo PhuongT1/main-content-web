@@ -1,0 +1,23 @@
+@import 'sass-rem';
+
+.title_box_wrapper {
+  width: 100%;
+  padding: rem-convert(8px) rem-convert(8px) rem-convert(10px);
+  gap: rem-convert(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    border-radius: rem-convert(30px);
+    object-fit: cover;
+  }
+}
+
+.content_box_wrapper {
+  padding: rem-convert(8px);
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(10px);
+}

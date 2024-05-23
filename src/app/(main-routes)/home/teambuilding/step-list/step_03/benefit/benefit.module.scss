@@ -1,0 +1,29 @@
+@import 'sass-rem';
+
+.benefit {
+  max-width: 100%;
+  max-height: rem-convert(454px);
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(15px);
+  width: 100%;
+
+  .checkbox_list {
+    overflow-y: scroll;
+    flex: 1;
+  }
+}
+.box_selected_content {
+  color: #edeef1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+
+  /* text/md-120/semibold */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+}

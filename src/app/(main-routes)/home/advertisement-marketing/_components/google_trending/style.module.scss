@@ -1,0 +1,44 @@
+@import 'sass-rem';
+
+.box_wrapper {
+  background: white;
+  padding: rem-convert(20px);
+  border-radius: rem-convert(10px);
+
+  .select_custom {
+    color: black;
+    border: 1px solid #e3e3e3;
+    border-radius: rem-convert(10px);
+  }
+}
+
+.menu_item {
+  padding: rem-convert(16px) !important;
+  justify-content: space-between !important;
+
+  .btn_back {
+    width: 100%;
+    svg {
+      padding-bottom: rem-convert(4px);
+      transform: rotate(180deg);
+    }
+  }
+
+  .btn_more {
+    display: none;
+    svg {
+      padding-top: rem-convert(4px);
+    }
+  }
+  &:hover {
+    .btn_more {
+      display: block;
+    }
+  }
+}
+
+.image_background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

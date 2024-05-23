@@ -1,0 +1,48 @@
+@import 'sass-rem';
+
+.wrapper_box {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  min-width: rem-convert(560px);
+  background-color: #191a1c;
+  border-radius: rem-convert(24px);
+}
+
+.wrapper_title {
+  padding: rem-convert(32px);
+  border-bottom: 1px solid #37393e;
+}
+
+.wrapper_content {
+  padding: rem-convert(20px) rem-convert(32px);
+  display: flex;
+  flex-direction: column;
+  gap: rem-convert(20px);
+
+  max-height: rem-convert(480px);
+  overflow-y: auto;
+}
+
+.wrapper_button {
+  padding: rem-convert(32px);
+  border-top: 1px solid #37393e;
+  gap: rem-convert(12px);
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    height: rem-convert(44px);
+    min-width: rem-convert(120px);
+    border: none;
+    &.button_outline {
+      background: #252629;
+      color: #fff;
+    }
+    &.button_primary {
+      background: #3c82f9;
+      color: #101014;
+    }
+  }
+}

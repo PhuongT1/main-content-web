@@ -1,0 +1,22 @@
+@import 'sass-rem';
+
+.node_wrapper {
+  padding: rem-convert(14px) rem-convert(16px);
+  height: rem-convert(60px);
+  width: rem-convert(150px);
+  border: 2px solid;
+}
+
+.node_input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: rem-convert(30px);
+  font-size: rem-convert(18px);
+  line-height: rem-convert(27px);
+  font-weight: 600;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+}

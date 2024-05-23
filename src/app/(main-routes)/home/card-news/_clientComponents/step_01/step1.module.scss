@@ -1,0 +1,29 @@
+@import 'sass-rem';
+
+.background {
+  border-radius: 10px;
+  background: var(--grayscale-gray-400, #191a1c);
+  padding: 20px;
+}
+
+.title,
+.sub_title {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 150%; /* 24px */
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.sub_title {
+  font-weight: 400;
+}
+
+.card-news-step1,
+.card-news-step1 * {
+  font-family: 'Pretendard' !important;
+}
