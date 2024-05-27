@@ -35,7 +35,8 @@ export const pretendard = localFont({
       weight: '800'
     }
   ],
-  variable: '--font-pretendard'
+  variable: '--font-pretendard',
+  display: 'swap'
 })
 
 export const roboto_mono = Roboto_Mono({
