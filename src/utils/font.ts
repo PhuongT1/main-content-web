@@ -7,10 +7,35 @@ export async function loadFont(fontName: string, fontUrl: string) {
   document.fonts.add(font)
 }
 
-export const pretendard = Roboto_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto-mono'
+export const pretendard = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Pretendard-Light.otf',
+      weight: '300'
+    },
+    {
+      path: '../../public/fonts/Pretendard-Regular.otf',
+      weight: '400'
+    },
+    {
+      path: '../../public/fonts/Pretendard-Bold.otf',
+      weight: '700'
+    },
+    {
+      path: '../../public/fonts/Pretendard-SemiBold.otf',
+      weight: '600'
+    },
+    {
+      path: '../../public/fonts/Pretendard-Regular.otf',
+      weight: '400',
+      style: 'italic'
+    },
+    {
+      path: '../../public/fonts/Pretendard-ExtraBold.otf',
+      weight: '800'
+    }
+  ],
+  variable: '--font-pretendard'
 })
 
 export const roboto_mono = Roboto_Mono({
