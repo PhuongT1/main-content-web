@@ -26,7 +26,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             fontFamily: 'var(--font-pretendard)'
           }
         }}
-        // className={`${pretendard.variable} ${roboto_mono.variable} ${nanum_pen.variable}`}
+        className={`${pretendard.variable} ${roboto_mono.variable} ${nanum_pen.variable}`}
       >
         <Providers>
           <Box component={'div'}>{children}</Box>

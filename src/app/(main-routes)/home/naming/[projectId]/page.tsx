@@ -3,17 +3,13 @@ import dynamic from 'next/dynamic'
 import LoadingComponent from '@/components/loading'
 import { PageProject } from '@/types/deck.type'
 
-const Namming = dynamic(() => import('../_clientComponents/index'), {
-  loading: () => <LoadingComponent open />,
-  ssr: false
-})
+const Namming = dynamic(() => import('../_clientComponents/index'))
 
-const NammingPage = async <T,>({ params }: PageProject<T>) => {
+const NammingPage = <T,>({ params }: PageProject<T>) => {
   const queryClient = new QueryClient()
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      phuong
       <Namming projectId={params.projectId} />
     </HydrationBoundary>
   )
