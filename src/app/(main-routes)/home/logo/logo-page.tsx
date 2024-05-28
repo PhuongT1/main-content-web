@@ -289,7 +289,7 @@ const LogoPage = ({ projectId }: any) => {
     <Box
       component={'div'}
       sx={{ backgroundColor: home.gray500 }}
-      className={`${jalnan.variable} ${ya.variable} ${bookk.variable} ${gmarket.variable} ${score.variable} ${chosun.variable} ${nanum.variable} ${nanummyeongjo.variable} ${nunumsquare.variable} ${maplestory.variable} ${classic.variable} ${swagger.variable}`}
+      // className={`${jalnan.variable} ${ya.variable} ${bookk.variable} ${gmarket.variable} ${score.variable} ${chosun.variable} ${nanum.variable} ${nanummyeongjo.variable} ${nunumsquare.variable} ${maplestory.variable} ${classic.variable} ${swagger.variable}`}
     >
       <Box component={'div'} className={styles.header_title} sx={{ borderBottom: `1px solid ${home.gray200}` }}>
         <Box component={'div'} className={styles.title}>

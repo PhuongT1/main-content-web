@@ -26,8 +26,8 @@ const Step1Naming = () => {
     selectedItem: yup.array().required(errorMessage).min(2, errorMessage).max(10, errorMaxMessage)
   })
 
-  const form = useForm<Namingkeyword>({
-    // resolver: yupResolver(schema),
+  const form = useForm<any>({
+    resolver: yupResolver(schema),
     reValidateMode: 'onChange',
     mode: 'onBlur',
     defaultValues: {
@@ -45,15 +45,8 @@ const Step1Naming = () => {
     }
   }, [data?.data])
 
-  console.log('Phuong Tran oi Step 01')
-
   return (
-    <>
-      <div>Phuong Tran Step 01</div>
-      <FormProvider {...form}>
-        {!completeStep.includes(STEP.STEP_ONE) ? <Step_01_Edit /> : <Step_01_View />}
-      </FormProvider>
-    </>
+    <FormProvider {...form}>{!completeStep.includes(STEP.STEP_ONE) ? <Step_01_Edit /> : <Step_01_View />}</FormProvider>
   )
 }
 export default Step1Naming
