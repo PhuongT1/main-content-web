@@ -23,220 +23,220 @@ import { step1, step2, step3, step4 } from '@/atoms/logo'
 import { DataStep1 } from '@/types/logo.type'
 import { DeckProjectId, StepProject } from '@/types/deck.type'
 
-const nanum = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/nanum/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nanum/ExtraBold.otf',
-      weight: '800'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nanum/Light.otf',
-      weight: '350'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nanum/Regular.otf',
-      weight: '400'
-    }
-  ],
-  variable: '--font-nanum'
-})
+// const nanum = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/nanum/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nanum/ExtraBold.otf',
+//       weight: '800'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nanum/Light.otf',
+//       weight: '350'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nanum/Regular.otf',
+//       weight: '400'
+//     }
+//   ],
+//   variable: '--font-nanum'
+// })
 
-const nanummyeongjo = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/nanummyeongjo/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nanummyeongjo/ExtraBold.otf',
-      weight: '800'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nanummyeongjo/Regular.otf',
-      weight: '400'
-    }
-  ],
-  variable: '--font-nanummyeongjo'
-})
+// const nanummyeongjo = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/nanummyeongjo/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nanummyeongjo/ExtraBold.otf',
+//       weight: '800'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nanummyeongjo/Regular.otf',
+//       weight: '400'
+//     }
+//   ],
+//   variable: '--font-nanummyeongjo'
+// })
 
-const nunumsquare = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/nunumsquare/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nunumsquare/ExtraBold.otf',
-      weight: '800'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nunumsquare/Regular.otf',
-      weight: '400'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nunumsquare/Heavy.otf',
-      weight: '900'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/nunumsquare/Light.otf',
-      weight: '350'
-    }
-  ],
-  variable: '--font-nunumsquare'
-})
+// const nunumsquare = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/nunumsquare/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nunumsquare/ExtraBold.otf',
+//       weight: '800'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nunumsquare/Regular.otf',
+//       weight: '400'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nunumsquare/Heavy.otf',
+//       weight: '900'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/nunumsquare/Light.otf',
+//       weight: '350'
+//     }
+//   ],
+//   variable: '--font-nunumsquare'
+// })
 
-const maplestory = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/maplestory/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/maplestory/Light.otf',
-      weight: '350'
-    }
-  ],
-  variable: '--font-maplestory'
-})
+// const maplestory = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/maplestory/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/maplestory/Light.otf',
+//       weight: '350'
+//     }
+//   ],
+//   variable: '--font-maplestory'
+// })
 
-const classic = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/classic/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/classic/Light.otf',
-      weight: '350'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/classic/Medium.otf',
-      weight: '500'
-    }
-  ],
-  variable: '--font-classic'
-})
+// const classic = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/classic/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/classic/Light.otf',
+//       weight: '350'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/classic/Medium.otf',
+//       weight: '500'
+//     }
+//   ],
+//   variable: '--font-classic'
+// })
 
-const swagger = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/swagger/Regular.otf',
-      weight: '400'
-    }
-  ],
-  variable: '--font-swagger'
-})
+// const swagger = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/swagger/Regular.otf',
+//       weight: '400'
+//     }
+//   ],
+//   variable: '--font-swagger'
+// })
 
-const chosun = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/chosun/Regular.otf',
-      weight: '400'
-    }
-  ],
-  variable: '--font-chosun'
-})
+// const chosun = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/chosun/Regular.otf',
+//       weight: '400'
+//     }
+//   ],
+//   variable: '--font-chosun'
+// })
 
-const score = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/score/Black.otf',
-      weight: '900'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/score/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/score/ExtraBold.otf',
-      weight: '800'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/score/ExtraLight.otf',
-      weight: '200'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/score/Heavy.otf',
-      weight: '900'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/score/Light.otf',
-      weight: '300'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/score/Medium.otf',
-      weight: '500'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/score/Regular.otf',
-      weight: '400'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/score/Thin.otf',
-      weight: '100'
-    }
-  ],
-  variable: '--font-score'
-})
+// const score = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/Black.otf',
+//       weight: '900'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/ExtraBold.otf',
+//       weight: '800'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/ExtraLight.otf',
+//       weight: '200'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/Heavy.otf',
+//       weight: '900'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/Light.otf',
+//       weight: '300'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/Medium.otf',
+//       weight: '500'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/Regular.otf',
+//       weight: '400'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/score/Thin.otf',
+//       weight: '100'
+//     }
+//   ],
+//   variable: '--font-score'
+// })
 
-const gmarket = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/gmarket/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/gmarket/Light.otf',
-      weight: '300'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/gmarket/Medium.otf',
-      weight: '500'
-    }
-  ],
-  variable: '--font-gmarket'
-})
+// const gmarket = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/gmarket/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/gmarket/Light.otf',
+//       weight: '300'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/gmarket/Medium.otf',
+//       weight: '500'
+//     }
+//   ],
+//   variable: '--font-gmarket'
+// })
 
-const bookk = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/bookk/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/bookk/Light.otf',
-      weight: '300'
-    }
-  ],
-  variable: '--font-bookk'
-})
+// const bookk = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/bookk/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/bookk/Light.otf',
+//       weight: '300'
+//     }
+//   ],
+//   variable: '--font-bookk'
+// })
 
-const ya = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/ya/Bold.otf',
-      weight: '700'
-    },
-    {
-      path: '../../../../../public/fonts/deck-06/ya/Regular.otf',
-      weight: '400'
-    }
-  ],
-  variable: '--font-ya'
-})
-const jalnan = localFont({
-  src: [
-    {
-      path: '../../../../../public/fonts/deck-06/jalnan/Regular.otf',
-      weight: '400'
-    }
-  ],
-  variable: '--font-jalnan'
-})
+// const ya = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/ya/Bold.otf',
+//       weight: '700'
+//     },
+//     {
+//       path: '../../../../../public/fonts/deck-06/ya/Regular.otf',
+//       weight: '400'
+//     }
+//   ],
+//   variable: '--font-ya'
+// })
+// const jalnan = localFont({
+//   src: [
+//     {
+//       path: '../../../../../public/fonts/deck-06/jalnan/Regular.otf',
+//       weight: '400'
+//     }
+//   ],
+//   variable: '--font-jalnan'
+// })
 
 const LogoPage = ({ projectId }: any) => {
   const [showDialog, toggleShowDialog, setToggleShowDialog] = useToggle()

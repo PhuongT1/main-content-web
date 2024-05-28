@@ -4,7 +4,7 @@ import { remConvert } from '@/utils/convert-to-rem'
 import { Box } from '@mui/material'
 import React, { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
-import { nanummyeongjo } from './font'
+// import { nanummyeongjo } from './font'
 import { ENUM_LAYOUT } from '@/constants/common.constant'
 import { useQuery } from '@tanstack/react-query'
 import { getConfigsIRDeckProject } from '@/services/edit-ir.service'
@@ -88,7 +88,7 @@ const LayoutIR = ({ sxContainer, layout }: LayoutProps) => {
         },
         ...sxContainer
       }}
-      className={`${nanummyeongjo.variable}`}
+      // className={`${nanummyeongjo.variable}`}
     >
       {getLayout(ENUM_LAYOUT[layoutSelected!])}
     </Box>

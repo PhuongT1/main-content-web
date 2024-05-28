@@ -4,7 +4,7 @@ import { remConvert } from '@/utils/convert-to-rem'
 import { Box } from '@mui/material'
 import React, { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
-import { nanummyeongjo } from './font'
+// import { nanummyeongjo } from './font'
 import { useQuery } from '@tanstack/react-query'
 import { getConfigsIRDeckProject } from '@/services/edit-ir.service'
 import { useParams } from 'next/navigation'
@@ -89,7 +89,7 @@ const LayoutIR = ({ sxContainer, pageLayout }: LayoutProps) => {
         },
         ...sxContainer
       }}
-      className={`${nanummyeongjo.variable}`}
+      // className={`${nanummyeongjo.variable}`}
     >
       <Box component={'div'} sx={{ display: 'flex', gap: remConvert('4px') }}>
         {getLayout()}
