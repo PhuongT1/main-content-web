@@ -228,15 +228,15 @@ import { DeckProjectId, StepProject } from '@/types/deck.type'
 //   ],
 //   variable: '--font-ya'
 // })
-// const jalnan = localFont({
-//   src: [
-//     {
-//       path: '../../../../../public/fonts/deck-06/jalnan/Regular.otf',
-//       weight: '400'
-//     }
-//   ],
-//   variable: '--font-jalnan'
-// })
+const jalnan = localFont({
+  src: [
+    {
+      path: '../../../../../public/fonts/deck-06/jalnan/Regular.otf',
+      weight: '400'
+    }
+  ],
+  variable: '--font-jalnan'
+})
 
 const LogoPage = ({ projectId }: any) => {
   const [showDialog, toggleShowDialog, setToggleShowDialog] = useToggle()
@@ -286,11 +286,7 @@ const LogoPage = ({ projectId }: any) => {
     palette: { home }
   } = useTheme()
   return (
-    <Box
-      component={'div'}
-      sx={{ backgroundColor: home.gray500 }}
-      // className={`${jalnan.variable} ${ya.variable} ${bookk.variable} ${gmarket.variable} ${score.variable} ${chosun.variable} ${nanum.variable} ${nanummyeongjo.variable} ${nunumsquare.variable} ${maplestory.variable} ${classic.variable} ${swagger.variable}`}
-    >
+    <Box component={'div'} sx={{ backgroundColor: home.gray500 }} className={`${jalnan.variable}`}>
       <Box component={'div'} className={styles.header_title} sx={{ borderBottom: `1px solid ${home.gray200}` }}>
         <Box component={'div'} className={styles.title}>
           <Box component={'h2'} style={{ marginLeft: '15px' }}>
