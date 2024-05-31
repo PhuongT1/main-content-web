@@ -5,7 +5,7 @@ import NamingPage from '../_clientComponents/index'
 
 const Namming = dynamic(() => import('../_clientComponents/index'))
 
-const NammingPage = <T,>({ params }: PageProject<T>) => {
+const NammingPage = async <T,>({ params }: PageProject<T>) => {
   const queryClient = new QueryClient()
 
   return (
