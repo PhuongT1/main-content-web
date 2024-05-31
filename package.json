@@ -11,8 +11,8 @@
     "dev": "env-cmd next dev -p 3003",
     "dev:https": "next dev --experimental-https",
     "dev:prod": "env-cmd -f .env.prod next dev",
-    "build:prod": "NODE_OPTIONS=\"--max-old-space-size=4096\" env-cmd -f .env.prod next build",
-    "build": "NODE_OPTIONS=\"--max-old-space-size=4096\" env-cmd next build  ",
+    "build": "NODE_OPTIONS=\"--max-old-space-size=4096\" env-cmd -f .env.prod next build",
+    "build:dev": "NODE_OPTIONS=\"--max-old-space-size=4096\" env-cmd next build  ",
     "start": "next start",
     "lint": "rm -rf .next && next lint"
   },
