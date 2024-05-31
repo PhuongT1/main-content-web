@@ -21,12 +21,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang='en' suppressHydrationWarning={true}>
       <Box
         component={'body'}
-        sx={{
-          '*': {
-            fontFamily: 'var(--font-pretendard)'
-          }
-        }}
-        className={`${pretendard.variable} ${roboto_mono.variable} ${nanum_pen.variable}`}
+        // sx={{
+        //   '*': {
+        //     fontFamily: 'var(--font-pretendard)'
+        //   }
+        // }}
+        // className={`${pretendard.className} ${roboto_mono.variable} ${nanum_pen.variable}`}
+        className={`${pretendard.className}`}
       >
         <Providers>
           <Box component={'div'}>{children}</Box>
